@@ -5,21 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <title>Spint-1-DanieL.L</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>DANIEL.L-SWEEPMINE</title>
 </head>
 
 <body onload="initGame()">
     <div class="game-container">
         <div class="header">
-            <h1>Header here</h1>
-            <p>My supercool MineSweeper</p>
+            <h1>MineSweepr</h1>
+            <p>Just like old-scholl MineSweepr but BETTER</p>
         </div>
     </div>
+
+    <button class="resetbtn" onclick="restartGame()"> 😁 </button>
     <div class="board-container">
         <table border="1" cellpedding="10">
             <tbody class="board"></tbody>
         </table>
-
+        <div class="btn">
+            <button class="easyBtn" onclick="initGame({size: 4,mines: 2})">Beginner</button>
+            <button class="medBtn" onclick="initGame({size: 8,mines: 12})">Medium</button>
+            <button class="hardBtn" onclick="initGame({size: 12,mines: 30})">Expert</button>
+        </div>
 
         <script src="js/util.js"></script>
         <script src="js/main.js"></script>

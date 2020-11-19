@@ -2,14 +2,25 @@ body {
     background-color: gainsboro;
     margin: 0;
     text-align: center;
+    background-image: url("/images/explosion.png");
+    font-family: "Sofia";
 }
 
 .header {
     padding: 20px;
     text-align: center;
-    background: #1abc9c;
+    background: #191515;
     color: white;
     font-size: 30px;
+    font-family: "Sofia";
+}
+
+.header {
+    font-family: "Sofia";
+}
+
+.resetbtn {
+    margin-bottom: 10px;
 }
 
 td {
@@ -17,6 +28,7 @@ td {
     height: 50px;
     font-size: 1.4em;
     color: black;
+    background-color: gray;
     font-weight: 700;
     border-radius: 8px;
     transition: all 0.2s ease;
@@ -24,7 +36,55 @@ td {
 }
 
 table {
-    border-spacing: 5px;
+    border-spacing: 2px;
     border-color: black;
     margin: auto;
+}
+
+.btn {
+    background-image: linear-gradient(to right, #16222A 0%, #3A6073 51%, #16222A 100%)
+}
+
+.btn {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.easyBtn {
+    border-radius: 40px;
+    background-color: black;
+    color: white;
+}
+
+.medBtn {
+    border-radius: 40px;
+    background-color: black;
+    color: white;
+    size: 5px;
+}
+
+.hardBtn {
+    border-radius: 40px;
+    background-color: black;
+    color: white;
+}
+
+.resetbtn {
+    background-color: black;
+    border-radius: 40px;
 }
